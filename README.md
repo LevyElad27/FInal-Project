@@ -1,7 +1,7 @@
 SIL - Simple Interface Learning
 
-Create By Elad Levy & Lotem Yakobian
+Create by Elad Levy & Lotem Yakobian
 
 
-New Interface gamification learning for student in Hebrew.
+New interface gamification learning for student in hebrew.
 The gamification of learning is an educational approach to motivate students to learn by using "Scoring method".
