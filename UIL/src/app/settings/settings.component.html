@@ -1,0 +1,51 @@
+
+    <form [formGroup]="personForm" class="form-register" (ngSubmit)="save()">
+       
+       <h2>הגדרות</h2>
+        <br><br>
+
+        <h5>אימייל</h5>
+        <input formControlName="email" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.email.errors }" />
+        <div *ngIf="submitted && f.email.errors" class="invalid-feedback">
+            <div *ngIf="f.email.errors.email">האימייל חייב להיות תיקני</div>
+        </div>
+
+        <br>
+        <br>
+
+        <h5>סיסמא</h5>
+        <input type="password" formControlName="password" class="form-control"
+            [ngClass]="{ 'is-invalid': submitted && f.password.errors }" />
+        <div *ngIf="submitted && f.password.errors" class="invalid-feedback">
+            <div *ngIf="f.password.errors.minlength">סיסמא חייבת להיות בעלת 6 תווים לפחות</div>
+            <div *ngIf="f.password.errors.maxlength">סיסמא לא יכולה להיות מעל 11 תווים</div>
+            <div *ngIf="f.password.errors.pattern">סיסמא חייבת להכיל מספרים ואותיות באנגלית בלבד</div>
+        </div>
+
+        <br>
+        <br>
+
+        <div *ngIf="thisUser.nickName">
+            <h5>כינוי</h5>
+            <input formControlName="nickName" class="form-control"
+                [ngClass]="{ 'is-invalid': submitted && f.nickName.errors }" value="thisUser.nickName" />
+            <div *ngIf="submitted && f.nickName.errors" class="invalid-feedback">
+                <div *ngIf="f.nickName.errors.minlength">כינוי חייב להכיל 3 אותיות לפחות</div>
+                <div *ngIf="f.nickName.errors.maxlength">כינוי לא יכול להכיל יותר מ-8 תווים</div>
+            </div>
+        </div>
+
+        <br>
+        <br>
+        <div class="text-center">
+            <button class="btn btn-primary mr-1">שמירה</button> &nbsp;
+            <button class="btn btn-primary mr-1" (click)="goBack()">חזרה</button>
+        </div>
+    </form>
+
+    <br>
+    <br>
+
+    <div class="text-center">
+        <button class="btn btn-primary mr-1" style="background-color: red;" (click)="del()">מחיקה</button>
+    </div>

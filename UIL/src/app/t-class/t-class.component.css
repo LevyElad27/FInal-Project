@@ -1,0 +1,207 @@
+h2,h5 {
+    -webkit-text-fill-color: white;
+    margin-left: auto;
+    margin-right: auto;
+    left: 800px;
+    position: absolute;
+}
+
+
+table {
+    margin-left: auto;
+    margin-right: auto;
+    border-color: white;
+    font-family: 'Trebuchet MS', Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100px;
+    height: 100px;
+}
+
+td, tr, th {
+    color: white;
+    border-color: white;
+    border: 1px solid white;
+    padding: 8px;
+    width: 80px;
+    height: 50px;
+}
+
+th {
+    background-color: grey;
+}
+tr {
+    background-color: rgb(32, 32, 32);
+}
+td {
+    background-color: rgb(32, 32, 32);
+}
+
+button{
+    background-color: rgb(91, 86, 114);
+    color: white;
+}
+
+input{
+    text-align: right;
+}
+
+
+
+.studentList{
+  position: relative;
+  overflow-y: scroll;
+  width: 650px;
+  height: 400px;
+  left: 570px;
+}
+
+.subList{
+  position: relative;
+  left: 700px;
+  overflow-y: scroll;
+  width: 400px;
+  height: 300px;
+  top: 100px;
+}
+
+.rewardsList{
+  position: relative;
+  left: 700px;
+  width: 400px;
+  height: 320px;
+}
+
+.botEditClass{
+  position: absolute;
+  left: 750px;
+}
+
+.botBack{
+  position: absolute;
+  left: 950px;
+}
+
+
+
+
+/* Float four columns side by side */
+.column {
+  float: left;
+  width: 400px;
+  padding: 0 5px;
+  box-sizing: border-box;
+}
+
+.row {margin: 0 -5px;}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+  box-sizing: border-box;
+}
+
+/* Responsive columns */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 400px;
+    display: block;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+  }
+}
+
+/* Style the counter cards */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  text-align: center;
+  background-color: #444;
+  color: white;
+  left: 500px;
+  box-sizing: border-box;
+}
+
+.fa {font-size:50px;}
+
+
+
+
+
+
+/* Button used to open the contact form - fixed at the bottom of the page */
+.open-button {
+  background-color: #555;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  bottom: 23px;
+  right: 28px;
+  width: 250px;
+  box-sizing: border-box;
+}
+
+/* The popup form - hidden by default */
+.form-popup {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  right: 15px;
+  border: 3px solid #fffefe;
+  z-index: 9;
+  box-sizing: border-box;
+}
+
+/* Add styles to the form container */
+.form-container {
+  max-width: 400px;
+  height: 400px;
+  padding: 10px;
+  background-color: rgb(0, 0, 0);
+  box-sizing: border-box;
+}
+
+/* Full-width input fields */
+.form-container input[type=text], .form-container input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #fff2f2;
+  box-sizing: border-box;
+}
+
+/* When the inputs get focus, do something */
+.form-container input[type=text]:focus, .form-container input[type=password]:focus {
+  background-color: rgb(255, 251, 251);
+  outline: none;
+  box-sizing: border-box;
+}
+
+/* Set a style for the submit/login button */
+.form-container .btn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+  box-sizing: border-box;
+}
+
+/* Add a red background color to the cancel button */
+.form-container .cancel {
+  background-color: red;
+  box-sizing: border-box;
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
+  box-sizing: border-box;
+}

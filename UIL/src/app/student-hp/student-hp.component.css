@@ -1,0 +1,156 @@
+.card-list {
+    padding: 5rem;
+}
+
+.card-header {
+    font-size: 10px;
+}
+
+.card-list::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+
+.card-list::-webkit-scrollbar-thumb {
+    background: #201c29;
+    border-radius: 10px;
+    box-shadow: inset 2px 2px 2px rgba(255, 255, 255, 0.25), inset -2px -2px 2px rgba(0, 0, 0, .25);
+}
+
+.card-list::-webkit-scrollbar-track {
+    background: linear-gradient(90deg, #201c29, #201c29 1px, #17141d 0, #17141d);
+}
+
+.card {
+    font-family: 'DM Mono', monospace;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    height: 200px;
+    width: 200px;
+    min-width: 200px;
+    padding: 3rem;
+    border-radius: 100px;
+    box-shadow: 0rem 0 3rem rgb(255, 245, 99);
+    transition: .3s;
+    bottom: 50px;
+    left: 120px;
+  }
+
+.card:hover {
+    transform: translateY(-3rem);
+}
+
+.card:hover~.card {
+    transform: translateX(200px);
+}
+
+.card:not(:first-child) {
+    margin-left: -50px;
+}
+
+.card-list .pic {
+    position: absolute;
+    height: 70px;
+    top: 25px;
+}
+
+.card-list .param {
+    position: relative;
+    top: 50px;
+}
+
+.card-list .mygrade {
+    width: 10%;
+    height: 30px;
+    text-align: center;
+    /* To center it horizontally (if you want) */
+    line-height: 30px;
+    /* To center it vertically */
+    color: rgb(0, 0, 0);
+    left: 43px;
+    position: relative;
+    top: 60px;
+}
+
+
+  .allCards{
+    position: relative;
+    width: 800px;
+    height: 600px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    top: 220px;
+    right: 400px;
+    left: 550px;
+  }
+
+h2, h3 ,h5{
+    color: white;
+}
+
+.pic{
+    position: relative;
+    width: 120px;
+    height: 120px;
+    left: -40px;
+    right: 700px;
+  }
+
+  #mygrade{
+    position: relative;
+    right: 20px;
+  }
+  
+#myBar {
+    width: 50%;
+    background-color: yellow;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    height: 30px;
+}
+
+#labels{
+    left: 900px;
+    top: 350px;
+    position: absolute;
+  }
+
+#myProgress {
+    position: absolute;
+    left: 40%;
+    color: blue;
+}
+
+.outerBar {
+    width: 350px;
+    text-align: center;
+    background-color: #ddd;
+    height: 30px;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.b1{
+    position: relative;
+    bottom: 20px;
+    margin-top: 70px;
+    margin-left: 70px;
+    left: 300px;
+    height: 195px;
+    }
+    
+    .b2{
+    position: relative;
+    bottom: 280px;
+    margin-top: 70px;
+    margin-right: 70px;
+    right: 30px;
+    height: 100px;
+    }
+
+    .top{
+        position: absolute;
+        left: 800px;
+    }

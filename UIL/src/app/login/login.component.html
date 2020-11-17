@@ -1,0 +1,16 @@
+
+    <div class="text-center">
+        <form class="form-signin">
+            <img src="./../../assets/L&E.ico" class="mb-4" alt="">
+            <h1 class="h3 mb-3 font-weight-normal">התחברות</h1>
+            <label for="inputEmail" class="sr-only">כתובת מייל</label>
+            <input #email type="email" class="form-control" placeholder="כתובת מייל" required autofocus>
+            <br>
+            <label for="inputPassword" class="sr-only">סיסמא</label>
+            <input #password type="password" class="form-control" placeholder="סיסמא" required>
+            <br>
+            <button (click)="loginReq(email.value,password.value)" class="btn btn-lg btn-primary btn-block"
+                type="submit">התחברות</button>
+            <p class="muted">&copy; 2017-2020</p>
+        </form>
+    </div>
